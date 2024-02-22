@@ -1,0 +1,715 @@
+@font-face {
+    font-family: logo;
+    src: url(./font/FlorisaPersonalUse-nRm84.otf);
+}
+@font-face {
+    font-family: logo2;
+    src: url(./font/Super\ Blasters.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+    font-weight: bold;
+    background-color: #141414;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Hero Section  */
+#Hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/* Hero Section  titlebar */
+#Hero >.titlebar{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-wrap: wrap;
+    /*  */
+    z-index: 1;
+}
+/* Hero section titlebar logo */
+#Hero >.titlebar>.lgo{
+
+    font-family: logo;
+    margin: 50px;
+
+   
+    
+}
+#Hero >.titlebar>.lgo>p{
+ position: absolute;
+ left: 70px;
+ top: 25px;
+ cursor: pointer;
+}
+#Hero >.titlebar>.lgo>.kan>img{
+
+    position: absolute;
+    left:20px;
+    top: 10px;
+    cursor: help;
+    transition: 2s;
+}
+#Hero >.titlebar>.lgo>.kan>.kan1{
+  
+    /* background-color: #ffffff; */
+    color:black ;
+    position: absolute;
+    height: 100px;
+    
+    top: 40px;
+    left: 0;
+    text-align: center;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+
+   
+}
+.kan1> a{
+    margin-left: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:30px ;
+    width: 30px;
+    background-color: #ffffff;
+     border-radius: 20px;
+
+
+}
+.kan1> a img{
+    
+    display: inline-block;
+   
+    
+}
+
+
+
+#Hero >.titlebar>.lgo>.kan:hover>.kan1{
+    visibility: visible;
+    top: 40px;
+    transition: linear;
+}
+
+
+#Hero >.titlebar>.lgo>p::first-letter{
+    color: red;
+}
+
+#Hero >.titlebar>.lgo>p >span{
+    color: green;
+    font-family: logo;
+}
+/* Hero section titlebar logo  end*/
+
+#Hero >.titlebar >.list{
+
+    display: flex;
+    position:absolute;
+    left: 25%;
+    top: -5px;
+    
+    
+}
+#Hero >.titlebar >.list >ul{
+    display: flex;
+
+}
+#Hero >.titlebar >.list >ul >li{
+
+    display: flex;
+    list-style: none;
+    padding-left: 40px;
+    margin-top: 10px;
+} 
+#Hero >.titlebar >.list >ul >li>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+    text-transform: uppercase;
+    
+    letter-spacing: 3px;
+    font-size: 12px;
+    height: 50px;
+    width: 90px;
+    /* background-color: #ff0808; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+#Hero >.titlebar >.list >ul >li>a:active{
+    color: red;
+    letter-spacing: 4px;
+
+}
+#Hero >.titlebar >.list >ul >li>a:hover{
+    color: orangered;
+}
+
+#Hero >.titlebar >.list >ul >#home>a span{
+    position: absolute;
+    display: block;
+    
+}
+#Hero >.titlebar >.list >ul >#home>a span:nth-child(1){
+    top: 10px;
+    left: -100%;
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Hero >.titlebar >.list >ul >#home>a:hover span:nth-child(1){
+
+    left:100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+
+}
+#Hero >.titlebar >.list >ul >#home>a span:nth-child(2){
+    top: 40px;
+    left:100%;
+
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Hero >.titlebar >.list >ul >#home>a:hover span:nth-child(2){
+
+    left: -100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+
+}
+#About span{
+    position: absolute;
+    display: block;
+}
+#About span:first-child{
+    top: 10px;
+    left: -100%;
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#About:hover span:first-child{
+    left:100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+#About span:last-child{
+    top: 40px;
+    left:100%;
+
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#About:hover span:last-child{
+    left: -100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+
+
+
+
+
+#Edu span{
+    position: absolute;
+    display: block;
+}
+#Edu span:first-child{
+    top: 10px;
+    left: -100%;
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Edu:hover span:first-child{
+    left:100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+#Edu span:last-child{
+    top: 40px;
+    left:100%;
+
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Edu:hover span:last-child{
+    left: -100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+
+
+
+
+#Skil span{
+    position: absolute;
+    display: block;
+}
+#Skil span:first-child{
+    top: 10px;
+    left: -100%;
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Skil:hover span:first-child{
+    left:100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+#Skil span:last-child{
+    top: 40px;
+    left:100%;
+
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Skil:hover span:last-child{
+    left: -100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+
+#Pro span{
+    position: absolute;
+    display: block;
+}
+#Pro span:first-child{
+    top: 10px;
+    left: -100%;
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Pro:hover span:first-child{
+    left:100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+#Pro span:last-child{
+    top: 40px;
+    left:100%;
+
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Pro:hover span:last-child{
+    left: -100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+#Con span{
+    position: absolute;
+    display: block;
+}
+#Con span:first-child{
+    top: 10px;
+    left: -100%;
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Con:hover span:first-child{
+    left:100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+#Con span:last-child{
+    top: 40px;
+    left:100%;
+
+    width: 70%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#141414);
+}
+#Con:hover span:last-child{
+    left: -100%;
+    transition: 1.5s;
+    background-color: #ffffff;
+}
+
+
+
+/* Hero Section  titlebar end */ 
+
+
+
+/*  Hero Section maincontent */
+
+
+#Hero >.maincontent{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid white; */
+    overflow: hidden;
+}
+#Hero >.maincontent>.left{
+    /* border: 0px solid rgb(255, 255, 255); */
+    width: 70%;
+    height: 90vh;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    overflow: hidden;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.747)),url(./photo/IMG_20221120_160402_573.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: 0.2s; */
+    
+}
+/* #Hero >.maincontent>.left:hover{
+   
+    width: 70%;
+    height: 90vh;
+    /* background-color: antiquewhite; 
+    position: absolute;
+    overflow: hidden;
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(./photo/IMG_20221120_160402_573.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay:1s;
+
+    
+    
+
+} */
+#Hero >.maincontent>.left>img{
+
+    width: 100px;
+    height: 100px;
+}
+#Hero >.maincontent>.right{
+    position: relative;
+    top: -150px;
+    left: 600px;
+    width: 900px;
+    
+    height: 900px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    animation-name: border;
+    border-radius:50px;
+    border: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style:dotted;
+   
+
+   
+   
+}
+#Hero >.maincontent>.right>.sub-container{
+
+    
+    /* background-color: aqua; */
+    position: relative;
+    top: 400px;
+    transform:rotate(-45deg);
+    width: 800px;
+    height: auto;
+    display:inline-block;
+    color: black;
+}
+.sub-container #iam{
+    display: inline;
+    /* background-color: aquamarine; */
+    font-size: 2rem;
+    position: relative;
+
+
+}
+.sub-container #dve{
+
+    /* background-color: aquamarine; */
+    font-size: .7rem;
+    position:absolute;
+    left: 80px;
+    top: 53px;
+    color: rgb(255, 0, 0);
+    /* width: 38%; */
+    border-right: 5px solid;
+    font-family: logo2;
+    font-weight: bold;
+    letter-spacing: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+               typing 5s  steps(21) infinite ,
+               cursor .4s  infinite alternate;
+
+}
+
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+
+
+}
+@keyframes typing {
+    25%{
+        width:0%;
+    }
+    50%{
+        width: 38%;
+    }
+    75%{
+        width: 0;
+    }
+    100%{
+        width: 38%;
+    }
+}
+.sub-container >p{
+    width: 80%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:monospace;
+    font-size: small;
+}
+.sub-container >#a{
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    /* border: 2px solid black; */
+    width: 170px;
+    
+    text-align: center;
+    padding: 5px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: orangered;
+    /* border-radius: 20px; */
+    height: 50px;
+   
+
+}
+.sub-container >#b{
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    /* border: 2px solid black; */
+    width: 170px;
+    height: 50px;
+    
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: orangered;
+    /* border-radius: 20px; */
+   
+
+}
+.sub-container >#b>img{
+    position: relative;
+    top: 10px;
+}
+
+.sub-container > #sociyal{
+    position: relative;
+    top: 90px;
+    left: 200px;
+    
+}
+.sub-container > #sociyal a{
+    padding-left: 10px;
+}
+
+
+/* Section About */
+
+#about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+#about>h1{
+    position: absolute;
+    top: 75px;
+    background-color: #141414;
+    z-index: 1;
+    text-transform: uppercase;
+}
+#about>h1::first-letter{
+    color: #ffae00;
+}
+#about >.outerBox{
+    position: absolute;
+    top: 90px;
+    width:60%;
+    height: 60vh;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 63% 37% 57% 43% / 31% 73% 27% 69% ;
+
+    
+}
+#about >.outerBox>.photofr{
+    position: absolute;
+    left: -50px;
+    top: 100px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(255, 255, 255);
+    background-image: url(./photo/jeyamurugan.png);
+    
+}
+#about >.outerBox>.photofr>img{
+    border: 3px solid white;
+    position: absolute;
+    left: 20px;
+    
+    top: 10px;
+    transform: rotate(-5deg);
+    
+}
+#about >.outerBox>.photofr>a{
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color:transparent;
+    visibility: hidden;
+    transform: rotate(-5deg);
+    padding: 3px;
+    /* border-radius: 20px; */
+}
+#about >.outerBox>.photofr:hover>a{
+    visibility: visible;
+}
+#about >.outerBox>p{
+    position: absolute;
+    left: 140px;
+    top: 130px;
+    width: 80%;
+}
+
+/* end About */
+
+
+
+
+/* Eduction */
+
+
+#eduction{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+
+}
+#eduction>.edu{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    border: 2px solid red;
+    margin: 60px;
+    
+    
+}
+#eduction>.mba{
+    left: 0;
+}
+#eduction>.be{
+    left:310px ;
+}
+
+#eduction>.hsc{
+    left:620px ;
+}
+#eduction>.sslc{
+    left: 940px;
+}
+
+/* Eduction end */
+
+/* skil */
+
+#skil{
+
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/* skil end */
+
+
+
+#contect{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #1d1b1b;
+}
